@@ -1,4 +1,8 @@
 require('dotenv').config()
+const app = express();
+app.listen(process.env.PORT || 3001, '0.0.0.0', () => {
+    console.log("Server is running.");
+});
 
 const { Client, Collection, IntentsBitField, Partials } = require('discord.js')
 const myIntents = new IntentsBitField();
