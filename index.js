@@ -1,8 +1,9 @@
+require('dotenv').config()
+
 const { Client, Collection, IntentsBitField, Partials } = require('discord.js')
 const myIntents = new IntentsBitField();
 myIntents.add(IntentsBitField.Flags.Guilds, IntentsBitField.Flags.GuildMessages, IntentsBitField.Flags.DirectMessages, IntentsBitField.Flags.DirectMessageReactions, IntentsBitField.Flags.GuildMessageReactions, IntentsBitField.Flags.MessageContent, IntentsBitField.Flags.GuildVoiceStates);
 const client = new Client({intents: myIntents, partials: [Partials.Message, Partials.Channel, Partials.Reaction]})
-const { token } = require('./config.json')
 
 client.on('ready', () => {
     console.log(`${client.user.username} nè`)
@@ -37,4 +38,4 @@ client.on('messageCreate', async (message) => {
     if (command) command.run(client, message, args)
 })
 
-client.login(token)
+client.login(process.env.BOT_TOKEN)
