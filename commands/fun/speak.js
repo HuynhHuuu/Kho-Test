@@ -36,7 +36,7 @@ module.exports = {
                 guildId: message.guild.id,
                 adapterCreator: message.guild.voiceAdapterCreator,
             })
-            const stream = getAudioUrl(args.join(' '), {
+            const stream = await getAudioUrl(args.join(' '), {
                 lang: 'vi',
             });
             const player = createAudioPlayer();
