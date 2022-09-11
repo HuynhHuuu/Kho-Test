@@ -1,0 +1,16 @@
+{
+  "name": "kho-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.11.0",
+    "ascii-table": "^0.0.9",
+    "discord-tts": "^1.2.2",
+    "discord.js": "^14.3.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.1.0",
+    "google-tts-api": "^2.0.2",
+    "libsodium-wrappers": "^0.7.10"
+  }
+}
