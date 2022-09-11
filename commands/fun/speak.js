@@ -45,7 +45,7 @@ module.exports = {
 
             const connection = getVoiceConnection(message.guild.id);
             connection.subscribe(player);
-            setTimeout(() => connection.destroy(), 30000)
+            console.log('OK')
         } catch(e) {
             message.channel.send('Kêu nữa tao dả dô cái mỏ lồn nha')
         }
