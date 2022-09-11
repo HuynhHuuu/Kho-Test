@@ -1,6 +1,10 @@
 {
   "name": "kho-bot",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node .",
+    "devStart": "node ."
+  },
   "dependencies": {
     "@discordjs/opus": "^0.8.0",
     "@discordjs/voice": "^0.11.0",
